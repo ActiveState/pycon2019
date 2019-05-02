@@ -1,0 +1,22 @@
+name: ActivePython-3.6.6
+owner: ActiveState
+languages:
+- name: python
+variables:
+- name: LD_LIBRARY_PATH
+  value: /root/.cache/activestate/cli-master/1f6c1d80/lib/
+- name: LOCATION
+  value: World
+- name: HELLO
+  value: Hello $variables.LOCATION
+scripts:
+- name: hello
+  value: echo Hello World
+- name: log-hello
+  value: $scripts.hello > /tmp/hello.txt
+- name: arg-hello
+  value: echo Hello $1
+events:
+ - name: ACTIVATE
+   value: echo This is an event.
+
