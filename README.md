@@ -34,3 +34,5 @@ If you're running on a platform other than Linux and have docker installed, here
 If you want to run the above demo project, you can use:
 
 `docker run -it --network="host" -p 8000:8000 activestate/state-tool`
+
+Copyright (c) 2019 ActiveState Software
